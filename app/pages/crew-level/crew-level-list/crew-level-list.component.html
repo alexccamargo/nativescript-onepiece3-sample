@@ -1,0 +1,9 @@
+<Label text="{{ header }}" class="crew-title"></Label>
+<ng-template ngFor let-item [ngForOf]="crewList">
+    <crew-level-item [data]="item" (levelChange)="levelChange($event)"></crew-level-item>
+</ng-template>
+<!--<ListView [items]="crewList" class="level-list">
+    <ng-template let-item="item">
+        <crew-level-item [data]="item" (levelChange)="itemLevelChange($event)"></crew-level-item>
+    </ng-template>
+</ListView>-->

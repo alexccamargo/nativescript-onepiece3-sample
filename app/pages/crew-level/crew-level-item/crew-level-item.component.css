@@ -1,0 +1,23 @@
+.level-button {
+    width: 50;
+    height: 40;
+}
+.crew-level-item {
+    height: 30;
+}
+
+.level-button.level-up.active {
+    background-color: greenyellow;
+}
+
+.level-button.level-up.inactive {
+    background-color: gray;
+}
+
+.level-button.level-down.active {
+    background-color: red;
+}
+
+.level-button.level-down.inactive {
+    background-color: gray;
+}

@@ -1,0 +1,6 @@
+<GridLayout row="1" columns="*, auto, auto" class="crew-level-item">
+    <Label [text]="data.name" col="0"></Label>
+    <Button [text]="glyphs.arrowUp" class="fa level-button level-up {{ classUpActive }}" (tap)="levelUpTap($event)" textWrap="true" col="1"></Button>
+    <Button [text]="glyphs.arrowDown" class="fa level-button level-down {{ classDownActive }}" (tap)="levelDownTap($event)" textWrap="true" col="2"></Button>
+</GridLayout>
+

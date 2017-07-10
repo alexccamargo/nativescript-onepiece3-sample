@@ -1,0 +1,7 @@
+<ScrollView>
+    <StackLayout>
+        <ng-container *ngFor="let i of [5, 4, 3, 2, 1]">
+            <crew-level-list [crewList]="getCrewListForLevel(i)" [header]="levelHeader(i)" (itemLevelChange)="crewLevelChange($event)"></crew-level-list>
+        </ng-container>
+    </StackLayout>
+</ScrollView>
